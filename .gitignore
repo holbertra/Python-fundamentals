@@ -1,0 +1,4 @@
+my_super_cool_virtual_environment/
+__pycache__/
+.pytest_cache/
+.vscode/

@@ -1,0 +1,60 @@
+
+PS C:\Users\Rich Holbert\Desktop\Workspace\PythonFundamentals\console_apps\repo> py .\my_io.py
+
+Inventory::__init__(self, ...)
+
+Welcome to the Sleasy Car Saleseman portal!
+What would you like to do?
+
+1) View inventory
+2) Add vehicle to inventory
+3) Change vehicle information
+4) Exit
+
+>2
+Adding vehicle to inventory...
+Enter vehicle make > Buick
+Enter vehicle model > lesabre
+Enter vehicle year > 2010
+Enter vehicle vin > vin999
+Enter vehicle listing price > 20000
+Adding vehicle to inventory...
+my_repo::add_vehicle()
+mydata::Inventory::add_vehicle()
+Vehicle::__init__(self, ...)
+Added Vehicle
+
+Welcome to the Sleasy Car Saleseman portal!
+What would you like to do?
+
+1) View inventory
+2) Add vehicle to inventory
+3) Change vehicle information
+4) Exit
+
+>2
+Adding vehicle to inventory...
+Enter vehicle make > ford
+Enter vehicle model > fairlane
+Enter vehicle year > 1967
+Enter vehicle vin > vin777
+Enter vehicle listing price > 30000
+Adding vehicle to inventory...
+my_repo::add_vehicle()
+mydata::Inventory::add_vehicle()
+Vehicle::__init__(self, ...)
+Added Vehicle
+
+Welcome to the Sleasy Car Saleseman portal!
+What would you like to do?
+
+1) View inventory
+2) Add vehicle to inventory
+3) Change vehicle information
+4) Exit
+
+>1
+len: 2
+ID  Make,  Model,  Year
+0 - Buick, lesabre, 2010
+1 - ford, fairlane, 1967
