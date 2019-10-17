@@ -38,8 +38,11 @@ you = {}
 data = [ ("name", "Rich") , ("age", 55), ("class", "Python") ]
 
 for x in data:
-    you.update({ x[0]: x[1] })
+    you.update({ x[0]: x[1] })   # .update() to add to dictionary, note the syntax
 print(you)    
+
+# Question: Does update.insert() also work? Probably not a dict is UNORDERED
+# Question: How do you retrieve some value given a key?
 
 for k, v, in data:
    you[k] = v    

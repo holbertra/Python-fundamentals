@@ -1,6 +1,8 @@
 # Linked-list is list connected to another list
 
 """
+https://visualgo.net/en/list   # visualization of data structures
+
 Node
 data = <....>
 next -> Node

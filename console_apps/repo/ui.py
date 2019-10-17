@@ -40,7 +40,7 @@ while True:
         print(manager.retrieve_inventory_list())
         
         input("Press enter to go back to main screen")
-    elif choice == "2":
+    elif choice == "2": #Add a vehicle
         clear_terminal()
         make = input("Enter vehicle make > ")
         model = input("Enter vehicle model > ")
@@ -51,9 +51,11 @@ while True:
         print("Adding vehicle to inventory...")
         time.sleep(1)
         clear_terminal()
+        # calls repo.py:add_vehicle(make, model, year, vin, price)
         print(manager.add_vehicle(make, model, year, vin, price))
         input("Press Enter to continue...")
-    elif choice == "3":
+    
+    elif choice == "3":   #Change vehicle information
         clear_terminal()
         print(manager.retrieve_inventory_list())
         index = int(input("Choose an ID to edit vehicle"))

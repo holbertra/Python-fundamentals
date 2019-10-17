@@ -19,7 +19,7 @@ class UnorderedList:
     def __init__(self, ):
         self.head = None
 
-    def add_item(self, new_item):
+    def add_item(self, new_item):   # O(3) - constant time, each statement weighted 1
         temp = Node(new_item)
         temp.set_next(self.head)
         self.head = temp
@@ -30,7 +30,7 @@ class UnorderedList:
     def length(self):
         count = 0
         current = self.head
-        while current != None:
+        while current != None:       # while loop executes n times, O(n + 3) => O(n)
             count += 1
             current = current.get_next()
         return count
@@ -80,6 +80,8 @@ class UnorderedList:
             return index
         else:
             return None
+
+    def add(self, item, )
 
 
 ##### Main program ########

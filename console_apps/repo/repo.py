@@ -6,10 +6,10 @@ def retrieve_inventory_list():
     retrieved = current_inventory.read_inventory()
     return retrieved if retrieved else "No vehicles in inventory"
 
-def retrieve_vehicle(index):
+def retrieve_vehicle(index):  # Retrieve inventory
     return current_inventory.get_vehicle(index)
 
-def add_vehicle(make, model, year, vin, price):
+def add_vehicle(make, model, year, vin, price): # called from Option #2 in ui.py
     return "Added Vehicle" if current_inventory.add_vehicle(make, model, year, vin, price) else "Error"
 
 def modify_vehicle(index, make, model, year, vin, price):

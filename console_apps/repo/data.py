@@ -54,7 +54,7 @@ class Inventory:
         return f'< Inventory: { len(self.vehicles ) } cars >'
     
     def add_vehicle(self, make, model, year, vin, price):
-        new_vehicle = Vehicle(make, model, year, vin, price)
+        new_vehicle = Vehicle(make, model, year, vin, price)  # Each new Vehicle object created
         self.vehicles.append(new_vehicle)
         self.date_modified = datetime.now()
         return 1
