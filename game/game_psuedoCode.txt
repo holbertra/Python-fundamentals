@@ -1,0 +1,61 @@
+Chap 11: Bagels deduction Game
+
+Function Definitions:
+
+def getSecretNum():
+  # Returns a string of unique random digits that is NUM_DIGITS long.
+  create a list of numbers
+
+def getClues(guess, secretNum):
+  # Returns a string with 
+      1. You guessed a correct number(s) but in the wrong position(s)
+      2. The number does not contain any of the digits you guessed	
+      3. A correct guess returns the position of the digit in the number
+          9 
+         --- --- ---
+
+def isOnlyDigits(num):
+   # Returns True if num is a string of only digits. 
+   # Otherwise, returns  False.
+
+==================================
+program:
+
+'I am thinking of a %s-digit number. Try to guess what it is.' % (NUM_DIGITS))
+'You have a limit of MAX_GUESS guesses'
+guess_count = 0
+winner = False
+
+Main Loop:
+
+while True:
+    secret_num = getSecretNum()
+    print "I have thought of a NUM_DIGITS digit number, can you guess what it is?
+    
+    while guess_count <= MAX_GUESS:
+        player_guess = input("Enter a NUM_DIGITS number >")
+        guess_count += 1
+        
+        # Check for winner
+        if player_guess == secret_num:
+            print "We got a winner!"
+            winner = True
+            break
+
+        elif:
+            # Check for correct entry of number
+            while len(player_guess) != NUM_DIGITS or not isOnlyDigits()
+                print "Please enter a NUM_DIGITS number"
+
+        # Evaluate the guess & give player a clue  
+        else:
+            getClues(player_guess)
+
+
+    print "Do you want to play again y/n?: 
+        if 'n' break:       
+     
+     
+     
+     
+    

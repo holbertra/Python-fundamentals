@@ -26,7 +26,7 @@ class Badges:
         return 1
 
     def list_badges(self):
-        message = "ID#   Access\n"
+        message = ""
         for id, doors in badge_dict.items():
             message += f'{id}  {doors}\n'
         return message
@@ -43,6 +43,19 @@ class Badges:
         access.append(badge_dict.get(badge_num))
         # Need to return this in better format - research casting a list into a string
         return access
+
+    def add_door(self, badge_num, access_doors):
+        self.badge_num = badge_num
+        self.access_doors = access_doors
+        badge_dict[self.badge_num].append(self.access_doors)
+        print("Added door:", self.access_doors, "to badge:", self.badge_num )
+
+    def delete_door(self, badge_num, access_doors):
+        self.badge_num = badge_num
+        self.access_doors = access_doors
+        print("Deleted door:", self.access_doors, "from badge:", self.badge_num )
+
+
 
 
 

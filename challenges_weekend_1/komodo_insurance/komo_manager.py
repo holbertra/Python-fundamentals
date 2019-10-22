@@ -3,7 +3,7 @@ from komo_data import Badges
 current_badges = Badges()
 
 def add_badge(badge_num, access_doors):                  # called from Option #1 in komo_ui.py
-    return "Added Badge" if current_badges.add_badge(badge_num, access_doors) else "Error"
+    return "Badge successfully added" if current_badges.add_badge(badge_num, access_doors) else "Error"
 
 def delete_badge(badge_num):
     return "Badge successfully deleted" if current_badges.delete_badge(badge_num) else "Error"
@@ -17,4 +17,9 @@ def edit_badge(badge_num):  # Edit the selected badge
 def get_badge(badge_num):
     return current_badges.get_badge(badge_num)
 
-def add_door()
+def add_door(badge_num, access_doors):
+    return "Added access door successfully" if current_badges.add_door(badge_num, access_doors) else "Error"
+
+def delete_door(badge_num, access_doors):
+    return "Deleted access door successfully" if current_badges.delete_door(badge_num, access_doors) else "Error"
+

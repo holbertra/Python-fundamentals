@@ -34,7 +34,17 @@ badge_dict = {
     2345: ["Z3", "H1"]
 }
 
+door = "V4"
+badge_num = 1234
+
+print(badge_dict.get(badge_num))   # ['A2', 'Z3']
+badge_dict[badge_num].append(door)
+
+message = """
+This is the updated badge """
+print(message)
 print(badge_dict)
+
 
 # badge_dict.update()
 # product.update({"whatever": "the value"})

@@ -16,8 +16,11 @@ FIFO -> First in First out -  Queue
 
 class UnorderedList:
 
-    def __init__(self, ):
+    def __init__(self ):
         self.head = None
+
+    def __repr__(self):
+        return f'[UL {self.head} ]'
 
     def add_item(self, new_item):   # O(3) - constant time, each statement weighted 1
         temp = Node(new_item)
@@ -36,7 +39,7 @@ class UnorderedList:
         return count
 
     def remove(self, item):
-        current = self.head
+        current = self.head   # start at the head of the list
         previous = None
         found = False
         while not found:
@@ -81,14 +84,14 @@ class UnorderedList:
         else:
             return None
 
-    def add(self, item, )
+#    def add(self, item, )
 
 
 ##### Main program ########
-my_linked = UnorderedList()
-my_linked.add_item(89)
-my_linked.add_item("hello")
-my_linked.add_item("world")
-print(my_linked.length())
+# my_linked = UnorderedList()
+# my_linked.add_item(89)
+# my_linked.add_item("hello")
+# my_linked.add_item("world")
+# print(my_linked.length())
 
-print(my_linked.index(102))  # this comes back with an index, which it shouldn't
+# print(my_linked.index(102))  # this comes back with an index, which it shouldn't
